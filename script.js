@@ -8,3 +8,6 @@ for (let i = 0; i < 256; i++) {
     square.classList = `square`;
     grid.appendChild(square);
 }
+
+const square = document.querySelectorAll('.square');
+square.forEach((square) => {square.addEventListener('mouseover', (e) => {e.target.style.backgroundColor = 'black'} )});
